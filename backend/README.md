@@ -31,7 +31,7 @@ npm install
 To start the server, run:
 
 ```
-npm start
+node server.js
 ```
 
 The server will run on [http://localhost:5000](http://localhost:5000).
