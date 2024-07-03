@@ -15,7 +15,7 @@ const App = () => {
         if (response.data.avatar) {
           setAvatar(`data:${response.data.avatar.contentType};base64,${response.data.avatar.data}`);
         } else {
-          setAvatar(null); // Limpiar el avatar si no hay datos
+          setAvatar(null);
         }
       })
       .catch(error => {
@@ -58,7 +58,7 @@ const App = () => {
     })
       .then(response => {
         setAvatar(`data:${response.data.avatar.contentType};base64,${response.data.avatar.data}`);
-        setAvatarPreview(null); // Limpiar la vista previa del avatar
+        setAvatarPreview(null);
       })
       .catch(error => {
         console.error('Error uploading avatar:', error);

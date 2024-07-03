@@ -34,7 +34,7 @@ app.post('/api/upload-avatar', upload.single('avatar'), (req, res) => {
             data: avatar.buffer.toString('base64'),
             contentType: avatar.mimetype
         };
-        res.json({ success: true, avatar: data.avatar }); // Devolver los datos del avatar
+        res.json({ success: true, avatar: data.avatar });
     } else {
         res.status(400).json({ success: false, message: 'No file uploaded.' });
     }
