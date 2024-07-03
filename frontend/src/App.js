@@ -93,13 +93,13 @@ const App = () => {
       {avatar && !avatarPreview && (
         <div>
           <h2>Uploaded Avatar</h2>
-          <img src={avatar} alt="Uploaded Avatar" style={{ maxWidth: '100px' }} />
+          <img src={avatar} alt="Uploaded Avatar" style={{ maxWidth: '150px' }} />
         </div>
       )}
       {avatarPreview && !loadingAvatar && (
         <div>
           <h2>Avatar Preview</h2>
-          <img src={avatarPreview} alt="Avatar Preview" style={{ maxWidth: '100px' }} />
+          <img src={avatarPreview} alt="Avatar Preview" style={{ maxWidth: '150px' }} />
         </div>
       )}
     </div>
